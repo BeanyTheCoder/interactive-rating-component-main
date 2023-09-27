@@ -50,8 +50,8 @@ _Thank You (Mobile):_
 ### Links 🔗
 
 - Solution repo on github [here](https://github.com/BeanyTheCoder/interactive-rating-component-main)
-- Solution link on Front End Mentor: [here]()
-- Live site link: [here]()
+- Solution link on Front End Mentor: [here](https://www.frontendmentor.io/solutions/interactive-rating-component-react-and-scss-dQN7enD9xl)
+- Live site link: [here](https://beanythecoder.github.io/interactive-rating-component-main/)
 
 ## My process 🏗️
 
