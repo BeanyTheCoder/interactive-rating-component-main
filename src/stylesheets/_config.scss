@@ -1,0 +1,26 @@
+$orange: hsl(25, 97%, 53%);
+$white: hsl(0, 0%, 100%);
+$light-grey: hsl(217, 12%, 63%);
+$medium-grey: hsl(216, 12%, 54%);
+$deeper-grey: hsl(220, 12%, 39%);
+$dark-blue: hsl(213, 19%, 18%);
+$very-dark-blue: hsl(216, 12%, 8%);
+$background-gradient: linear-gradient(hsl(215, 22%, 15%), hsl(215, 27%, 12%));
+$body-text: 1em;
+$h1-text: 1.75em;
+
+@mixin flex($flex-direction, $justify-content, $align-items, $gap) {
+  display: flex;
+  flex-direction: $flex-direction;
+  justify-content: $justify-content;
+  align-items: $align-items;
+  gap: $gap;
+}
+
+@mixin circle($size, $background-color) {
+  @include flex(row, center, center, unset);
+  width: $size;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background-color: $background-color;
+}

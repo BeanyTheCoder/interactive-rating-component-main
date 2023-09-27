@@ -1,0 +1,87 @@
+@import "./config";
+
+.card {
+  background: $background-gradient;
+  width: clamp(275px, 90vw, 400px);
+  border-radius: 30px;
+  margin: auto;
+  padding: 2.75em 2em;
+  font-size: 1rem;
+
+  &__img {
+    @include circle(3.5em, $dark-blue);
+    margin-bottom: 2em;
+    font-size: 1em;
+  }
+
+  &__main {
+    h1 {
+      color: $white;
+      margin-bottom: 0.25em;
+    }
+
+    p {
+      color: $medium-grey;
+      line-height: 175%;
+    }
+
+    &__ratings {
+      @include flex(row, space-between, center, unset);
+      padding: 1.75em 0;
+
+      &__item {
+        @include circle(3.5em, $dark-blue);
+        font-size: 1rem;
+        color: $medium-grey;
+        cursor: pointer;
+        transition: 200ms;
+        font-size: 1em;
+
+        &.--selected {
+          background-color: $medium-grey;
+          color: $white;
+
+          &:hover {
+            background-color: $deeper-grey;
+          }
+        }
+
+        &:hover {
+          background-color: $orange;
+          color: $white;
+        }
+
+        &:active {
+          transform: scale(0.9);
+        }
+      }
+    }
+
+    button {
+      text-transform: uppercase;
+      padding: 1em;
+      width: 100%;
+      border-radius: 999px;
+      letter-spacing: 2px;
+      cursor: pointer;
+      background-color: $orange;
+      color: $white;
+      border: none;
+      outline: none;
+      transition: 200ms;
+      font-size: 1em;
+
+      &:hover {
+        background-color: $white;
+        color: $orange;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .card {
+    border-radius: 20px;
+    font-size: 0.9rem;
+  }
+}

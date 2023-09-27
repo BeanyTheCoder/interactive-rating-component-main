@@ -1,0 +1,32 @@
+@import "./config";
+@import "./RatingFormPage";
+@import "./ThankYouPage";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Overpass", sans-serif;
+}
+
+:root {
+  font-size: 15px;
+}
+
+body {
+  background-color: $very-dark-blue;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  font-size: $h1-text;
+  font-weight: 700;
+}
+
+p {
+  font-size: $body-text;
+  font-weight: 400;
+}

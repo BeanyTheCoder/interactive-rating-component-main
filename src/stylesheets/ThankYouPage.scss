@@ -1,0 +1,43 @@
+@import "./config";
+
+.results {
+  @include flex(column, center, center, unset);
+  background: $background-gradient;
+  width: clamp(275px, 90vw, 400px);
+  border-radius: 30px;
+  margin: auto;
+  padding: 2.75em 2em;
+  font-size: 1rem;
+  text-align: center;
+
+  &__result {
+    background-color: $dark-blue;
+    color: $orange;
+    padding: 0.5em 1em;
+    border-radius: 999px;
+    font-size: 1em;
+
+    margin: 2em 0;
+    cursor: pointer;
+  }
+
+  &__main {
+    h1 {
+      color: $white;
+      margin-bottom: 0.25em;
+    }
+
+    p {
+      color: $medium-grey;
+      line-height: 175%;
+    }
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .results {
+    padding: 2.75em 1.5em;
+    border-radius: 20px;
+    font-size: 0.9rem;
+  }
+}
